@@ -9,12 +9,7 @@ alias .6='cd ../../../../../../'            # Go back 6 directory levels
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
-alias ll='ls -FGlAhp'                       # Preferred 'ls' implementation
 alias less='less -FSRXc'                    # Preferred 'less' implementation
-
-# recursively change ownership and mode
-alias chown='chown -Rv'
-alias chmod='chmod -Rv'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -43,18 +38,27 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+# recursively change ownership and mode
+alias chown='chown -Rv'
+alias chmod='chmod -Rv'
+
 # editors
 alias subl.='subl .'
 alias code.='code .'
 
+# finder
+alias open.='open .'
+
 # ssh
+alias sshnano='ssh cli99@141.142.227.55'
+alias sshminsky1='ssh cli99@minsky1-1.csl.illinois.edu'
+alias sshcarml='ssh carml@minsky1-1.csl.illinois.edu'
+alias sshminsky2='ssh cli99@minsky2-2.csl.illinois.edu'
 alias sshews='ssh cli99@linux.ews.illinois.edu'
 alias sshimpact1='ssh cli99@impact1.csl.illinois.edu'
 alias sshwave1='ssh cli99@wave1.csl.illinois.edu'
 alias sshbw='ssh -X -l li7 bw.ncsa.illinois.edu'
 alias sshabdul='ssh abdul@mag.csl.illinois.edu'
-alias sshminsky1='ssh -X cli99@minsky1-1.csl.illinois.edu'
-alias sshminsky2='ssh cli99@minsky2-1.csl.illinois.edu'
 alias sshquartet='ssh cli99@quartet-hwu.csl.illinois.edu'
 alias sshpas='ssh -l weitan cs-host-r2-sm1.pok.ibm.com'
 alias sshmax='ssh -l cheng digits01.watson.ibm.com'
@@ -77,6 +81,9 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 
 # Show active network interfaces
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
+
+# https://github.com/songgao/colorgo
+#alias go=colorgo
 
 # go helpers
 #gocd () { cd `go list -f '{{.Dir}}' $1` }
