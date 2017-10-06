@@ -19,3 +19,5 @@
 * vscode - Monokai
 
 * [gvm](https://github.com/moovweb/gvm) - [install go compiler binaries](https://golang.org/doc/install/source), then `export GOROOT_BOOTSTRAP=$GOROOT && gvm install go1.8.3`
+
+# [fzf](https://github.com/junegunn/fzf)
