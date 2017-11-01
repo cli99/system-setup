@@ -49,19 +49,19 @@ alias code.='code .'
 # finder
 alias open.='open .'
 
+# go 
+alias go='richgo'
+
 # ssh
 alias sshnano='ssh cli99@141.142.227.55'
 alias sshminsky1='ssh cli99@minsky1-1.csl.illinois.edu'
 alias sshcarml='ssh carml@minsky1-1.csl.illinois.edu'
+alias sshwhatever='ssh abduld@csl-224-01.csl.illinois.edu'
 alias sshminsky2='ssh cli99@minsky2-2.csl.illinois.edu'
 alias sshews='ssh cli99@linux.ews.illinois.edu'
 alias sshimpact1='ssh cli99@impact1.csl.illinois.edu'
-alias sshwave1='ssh cli99@wave1.csl.illinois.edu'
+#alias sshwave1='ssh cli99@wave1.csl.illinois.edu'
 alias sshbw='ssh -X -l li7 bw.ncsa.illinois.edu'
-alias sshabdul='ssh abdul@mag.csl.illinois.edu'
-alias sshquartet='ssh cli99@quartet-hwu.csl.illinois.edu'
-alias sshpas='ssh -l weitan cs-host-r2-sm1.pok.ibm.com'
-alias sshmax='ssh -l cheng digits01.watson.ibm.com'
 
 # tmux
 alias quartet='. ~/.tmuxpanes/quartet.sh'
@@ -82,10 +82,54 @@ alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date
 # Show active network interfaces
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
-# https://github.com/songgao/colorgo
-#alias go=colorgo
-
 # go helpers
-#gocd () { cd `go list -f '{{.Dir}}' $1` }
-#deps() { go list -f '{{ join .Deps  "\n"}}' $1 }
-#imports() { go list -f '{{ join .Imports "\n" }}' $1 }
+gocd() { cd `go list -f '{{.Dir}}' $1` }
+deps() { go list -f '{{ join .Deps  "\n"}}' $1 }
+imports() { go list -f '{{ join .Imports "\n" }}' $1 }
+
+# rmate helper, create an ssh tunnel, e.g. rmate sshcarml
+rmate() { ssh -R 52698:127.0.0.1:52698 `which $1 | awk -F " " '{print $NF}'`}
+
+### fzf
+# c - browse chrome history
+c() {
+  local cols sep google_history open
+  cols=$(( COLUMNS / 3 ))
+  sep='{::}'
+
+  if [ "$(uname)" = "Darwin" ]; then
+    google_history="$HOME/Library/Application Support/Google/Chrome/Default/History"
+    open=open
+  else
+    google_history="$HOME/.config/google-chrome/Default/History"
+    open=xdg-open
+  fi
+  cp -f "$google_history" /tmp/h
+  sqlite3 -separator $sep /tmp/h \
+    "select substr(title, 1, $cols), url
+     from urls order by last_visit_time desc" |
+  awk -F $sep '{printf "%-'$cols's  \x1b[36m%s\x1b[m\n", $1, $2}' |
+  fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs $open > /dev/null 2> /dev/null
+}
+
+# Update (one or multiple) selected application(s)
+# mnemonic [B]rew [U]pdate [P]lugin
+bup() {
+  local upd=$(brew leaves | fzf -m)
+
+  if [[ $upd ]]; then
+    for prog in $(echo $upd);
+    do; brew upgrade $prog; done;
+  fi
+}
+
+# Delete (one or multiple) selected application(s)
+# mnemonic [B]rew [C]lean [P]lugin (e.g. uninstall)
+bcp() {
+  local uninst=$(brew leaves | fzf -m)
+
+  if [[ $uninst ]]; then
+    for prog in $(echo $uninst);
+    do; brew uninstall $prog; done;
+  fi
+}

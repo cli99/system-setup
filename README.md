@@ -7,11 +7,12 @@
 * [fasd](https://github.com/clvv/fasd)
 * the_silver_searcher
 * zgen
-	*  [bullet-train](https://github.com/caiogondim/bullet-train.zsh)
-	*  [powerline fonts](https://github.com/powerline/fonts)
+	* [bullet-train](https://github.com/caiogondim/bullet-train.zsh)
+	* [agnoster](https://github.com/nvbn/thefuck) 
+	* [powerline fonts](https://github.com/powerline/fonts)
 * vim
-	*  [pathogen](https://github.com/tpope/vim-pathogen)
-	*  [vim-sensible](https://github.com/tpope/vim-sensible)
+	* [pathogen](https://github.com/tpope/vim-pathogen)
+	* [vim-sensible](https://github.com/tpope/vim-sensible)
 * tmux 
 	* [tpm](https://github.com/tmux-plugins/tpm)
 	* [maglev](https://github.com/caiogondim/maglev)
@@ -20,4 +21,8 @@
 
 * [gvm](https://github.com/moovweb/gvm) - [install go compiler binaries](https://golang.org/doc/install/source), then `export GOROOT_BOOTSTRAP=$GOROOT && gvm install go1.8.3`
 
-# [fzf](https://github.com/junegunn/fzf)
+* [fzf](https://github.com/junegunn/fzf)
+
+* [thefuck](https://github.com/nvbn/thefuck)
+
+* [rmate](https://github.com/rafaelmaiolla/remote-vscode)
