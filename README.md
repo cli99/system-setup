@@ -13,6 +13,12 @@
 * vim
 	* [pathogen](https://github.com/tpope/vim-pathogen)
 	* [vim-sensible](https://github.com/tpope/vim-sensible)
+	* vim-syntastic
+	* vim-airline
+	* vim-commentary
+	* vim-go
+	* vim-surround
+	* [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
 * tmux 
 	* [tpm](https://github.com/tmux-plugins/tpm)
 	* [maglev](https://github.com/caiogondim/maglev)

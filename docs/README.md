@@ -6,11 +6,12 @@
 	* use powerline font for both font and non-ascii font - meslo lg m bold
 * [fasd](https://github.com/clvv/fasd)
 * zgen
-	*  [bullet-train](https://github.com/caiogondim/bullet-train.zsh)
-	*  [powerline fonts](https://github.com/powerline/fonts)
+	* [bullet-train](https://github.com/caiogondim/bullet-train.zsh)
+	* [powerline fonts](https://github.com/powerline/fonts)
 * vim
-	*  [pathogen](https://github.com/tpope/vim-pathogen)
-	*  [vim-sensible](https://github.com/tpope/vim-sensible)
+	* [pathogen](https://github.com/tpope/vim-pathogen)
+	* [vim-sensible](https://github.com/tpope/vim-sensible)
+	* []
 * tmux 
 	* [tpm](https://github.com/tmux-plugins/tpm)
 	* [maglev](https://github.com/caiogondim/maglev)
