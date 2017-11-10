@@ -11,8 +11,10 @@
 	* [agnoster](https://github.com/nvbn/thefuck) 
 	* [powerline fonts](https://github.com/powerline/fonts)
 * vim
+	* [vimrc](https://github.com/amix/vimrc)
 	* [pathogen](https://github.com/tpope/vim-pathogen)
 	* [vim-sensible](https://github.com/tpope/vim-sensible)
+	* vim-fugitive
 	* vim-syntastic
 	* vim-airline
 	* vim-commentary
