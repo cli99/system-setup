@@ -1,0 +1,74 @@
+[user]
+	name = Cheng Li
+	email = cli99@illinois.edu
+
+[push]
+	default = simple
+
+[core]
+	excludesfile = /Users/chengli/.gitignore
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+
+[url "git@bitbucket.org:"]
+	insteadOf = https://bitbucket.org/
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+
+[color]
+    ui = auto
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+# [color "status"]
+# 	added = green bold
+# 	changed = yellow bold
+# 	untracked = red bold
+
+[alias]
+	a = add --all
+	ai = add -i
+	#############
+	c = commit
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
+	cem = commit --allow-empty -m
+	cd = commit --amend
+	cad = commit -a --amend
+	ced = commit --allow-empty --amend
+	#############
+	ps = push
+	psf = push -f
+	psu = push -u
+	pst = push --tags
+	#############
+	pl = pull
+	pb = pull --rebase
+	#############
+	s = status
+	sb = status -s -b
+	
+	# Update all submodules
+    subup = submodule update --init
+	
+	# Unstage changes from the index
+    unstage = reset HEAD --
