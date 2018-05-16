@@ -25,7 +25,6 @@
 	* [tpm](https://github.com/tmux-plugins/tpm)
 	* [maglev](https://github.com/caiogondim/maglev)
 
-* vscode - Monokai
 
 * [gvm](https://github.com/moovweb/gvm) - [install go compiler binaries](https://golang.org/doc/install/source), then `export GOROOT_BOOTSTRAP=$GOROOT && gvm install go1.8.3`
 
@@ -34,6 +33,10 @@
 * [thefuck](https://github.com/nvbn/thefuck)
 
 * [rmate](https://github.com/rafaelmaiolla/remote-vscode)
+
+
+* vscode - Monokai
+https://code.visualstudio.com/docs/setup/mac
 
 ```
 code --list-extensions | xargs -L 1 echo code --install-extension
