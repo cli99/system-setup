@@ -34,7 +34,11 @@
 
 * [rmate](https://github.com/rafaelmaiolla/remote-vscode)
 
+* [fd](https://github.com/sharkdp/fd/)
 
+* [tldr](https://tldr.sh/)
+
+[cli-improved](https://remysharp.com/2018/08/23/cli-improved)
 * vscode - Monokai
 https://code.visualstudio.com/docs/setup/mac
 
