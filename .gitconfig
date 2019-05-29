@@ -8,11 +8,11 @@
 [core]
 	excludesfile = /Users/chengli/.gitignore
 
-[url "git@github.com:"]
-	insteadOf = https://github.com/
+[url "https://github.com/"]
+	insteadOf = git@github.com:
 
-[url "git@bitbucket.org:"]
-	insteadOf = https://bitbucket.org/
+[url "https://bitbucket.org/"]
+	insteadOf = git@bitbucket.org:
 
 [url "https://github.com/"]
     insteadOf = gh:
