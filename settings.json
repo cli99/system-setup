@@ -1,0 +1,90 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.minimap.enabled": false,
+  // Set the default
+  "editor.formatOnSave": true,
+  // Enable per-language
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.formatOnSave": true
+  },
+  "[go]": {
+    "editor.formatOnSave": true
+  },
+  "go.lintTool": "gometalinter",
+  "go.buildOnSave": "off",
+  "go.inferGopath": true,
+  "files.associations": {
+    "*.cu": "c",
+    "*.js": "javascriptreact",
+    "Dockerfile.*": "dockerfile",
+    ".aliases": "bat",
+    ".env": "bat"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 0,
+  "git.enableSmartCommit": true,
+  "docker.showExplorer": true,
+  "workbench.panel.location": "bottom",
+  "prettier.singleQuote": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "latex-workshop.latex.tools": [
+    {
+      "command": "",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ],
+      "name": "Step 1: "
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "toolchain",
+      "tools": ["Step 1: "]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.latex.autoBuild.onSave.enabled": true,
+  "latex-workshop.view.pdf.external.command": {
+    "command": "open",
+    "args": ["%PDF%"]
+  },
+  "breadcrumbs.enabled": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.scrollback": 10000,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "FuraCode Nerd Font, Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "markdown.preview.fontSize": 15,
+  "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+  "editor.fontWeight": "500",
+  "workbench.colorTheme": "Monokai",
+  "terminal.integrated.fontWeight": "500",
+  "terminal.integrated.fontSize": 13,
+  //-------- Remote VSCode configuration --------
+  // Port number to use for connection.
+  "remote.port": 52698,
+  // Launch the server on start up.
+  "remote.onstartup": true,
+  // Address to listen on.
+  "remote.host": "127.0.0.1",
+  // If set to true, error for remote.port already in use won't be shown anymore.
+  "remote.dontShowPortAlreadyInUseError": false,
+  "latex-workshop.latex.autoBuild.run": "onFileChange",
+  "php.validate.run": "onType",
+  "python.linting.lintOnSave": false,
+  "go.lintOnSave": "off",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
