@@ -49,9 +49,6 @@ alias code.='code .'
 # finder
 alias open.='open .'
 
-# go 
-alias go='richgo'
-
 # ssh
 alias sshnano='ssh cli99@141.142.227.55'
 alias sshminsky1='ssh cli99@minsky1-1.csl.illinois.edu'
