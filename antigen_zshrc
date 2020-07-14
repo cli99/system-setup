@@ -1,0 +1,24 @@
+[ -z "$SSH_CONNECTION" ] && ZSH_TMUX_AUTOSTART="false"
+
+source ~/.config/antigen.zsh
+antigen use oh-my-zsh
+
+# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
+antigen bundles <<EOBUNDLES
+command-not-found
+colored-man-pages
+magic-enter
+extract
+tmux
+git
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+rupa/z
+EOBUNDLES
+antigen theme agnoster
+antigen apply
+
+[[ -s "/root/.gvm/scripts/gvm" ]] && source "/root/.gvm/scripts/gvm"
+
+eval "$(starship init zsh)"
