@@ -1,37 +1,71 @@
-## Welcome to GitHub Pages
+## syssetup
 
-You can use the [editor on GitHub](https://github.com/cli99/syssetup/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### item2
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- color presets - [tomorrow night eighties](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)
+- use powerline font for both font and non-ascii font - meslo lg m bold
 
-### Markdown
+- [fasd](https://github.com/clvv/fasd)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### the_silver_searcher
 
-```markdown
-Syntax highlighted code block
+### zgen or antigen
 
-# Header 1
-## Header 2
-### Header 3
+- [bullet-train](https://github.com/caiogondim/bullet-train.zsh)
+- [agnoster](https://github.com/nvbn/thefuck) \* [powerline fonts](https://github.com/powerline/fonts)
 
-- Bulleted
-- List
+### vim
 
-1. Numbered
-2. List
+- [vimrc](https://github.com/amix/vimrc)
+- [pathogen](https://github.com/tpope/vim-pathogen)
+- [vim-sensible](https://github.com/tpope/vim-sensible)
+- vim-fugitive
+- vim-syntastic
+- vim-airline
+- vim-commentary
+- vim-go
+- vim-surround
+- [tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
 
-**Bold** and _Italic_ and `Code` text
+### tmux
 
-[Link](url) and ![Image](src)
-```
+- [tpm](https://github.com/tmux-plugins/tpm)
+- [maglev](https://github.com/caiogondim/maglev)
+- [gotop](https://github.com/cjbassi/gotop)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### golang
 
-### Jekyll Themes
+- [gvm](https://github.com/moovweb/gvm)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cli99/syssetup/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### [fzf](https://github.com/junegunn/fzf)
 
-### Support or Contact
+### [thefuck](https://github.com/nvbn/thefuck)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### [rmate](https://github.com/rafaelmaiolla/remote-vscode)
+
+### [fd](https://github.com/sharkdp/fd/)
+
+### [tldr](https://tldr.sh/)
+
+### [cli-improved](https://remysharp.com/2018/08/23/cli-improved)
+
+### vscode Monokai
+
+https://code.visualstudio.com/docs/setup/mac
+
+### tmux
+
+- [tpm](https://github.com/tmux-plugins/tpm)
+- [maglev](https://github.com/caiogondim/maglev)
+
+### vscode
+
+- [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync)
+
+### [starship](https://starship.rs/)
+
+### books
+
+- https://docs.python-guide.org/
+- https://github.com/Avik-Jain/100-Days-Of-ML-Code
+- https://github.com/dsgiitr/d2l-pytorch
