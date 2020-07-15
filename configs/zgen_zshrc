@@ -57,20 +57,3 @@ source $HOME/.aliases
 
 # Env vars shared by Bash and Zsh
 source "$HOME/.env"
-
-# swagger auto-completion
-# add auto-completion directory to zsh's fpath
-fpath=($HOME/.zsh/completion $fpath)
-# compsys initiatlization
-autoload -U compinit
-compinit
-
-[[ -s "/Users/chengli/.gvm/scripts/gvm" ]] && source "/Users/chengli/.gvm/scripts/gvm"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-eval $(thefuck --alias)

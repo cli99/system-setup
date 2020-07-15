@@ -49,17 +49,6 @@ alias code.='code .'
 # finder
 alias open.='open .'
 
-# ssh
-alias sshnano='ssh cli99@141.142.227.55'
-alias sshminsky1='ssh cli99@minsky1-1.csl.illinois.edu'
-alias sshcarml='ssh carml@minsky1-1.csl.illinois.edu'
-alias sshwhatever='ssh abduld@csl-224-01.csl.illinois.edu'
-alias sshminsky2='ssh cli99@minsky2-2.csl.illinois.edu'
-alias sshews='ssh cli99@linux.ews.illinois.edu'
-alias sshimpact1='ssh cli99@impact1.csl.illinois.edu'
-#alias sshwave1='ssh cli99@wave1.csl.illinois.edu'
-alias sshbw='ssh -X -l li7 bw.ncsa.illinois.edu'
-
 # tmux
 alias quartet='. ~/.tmuxpanes/quartet.sh'
 alias trio='. ~/.tmuxpanes/trio.sh'
