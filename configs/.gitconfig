@@ -1,12 +1,8 @@
-[user]
-	name = Cheng Li
-	email = cli99@illinois.edu
-
 [push]
 	default = simple
 
 [core]
-	excludesfile = /Users/chengli/.gitignore
+	excludesfile = ~/.gitignore
 
 [url "https://github.com/"]
 	insteadOf = git@github.com:

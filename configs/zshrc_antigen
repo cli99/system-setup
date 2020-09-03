@@ -5,20 +5,20 @@ antigen use oh-my-zsh
 
 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins
 antigen bundles <<EOBUNDLES
+zsh-users/zsh-syntax-highlighting
 command-not-found
 colored-man-pages
 magic-enter
 extract
 tmux
-git
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
-zsh-users/zsh-syntax-highlighting
-rupa/z
+zsh-users/zsh-history-substring-search
 EOBUNDLES
-antigen theme agnoster
+
+antigen theme https://github.com/caiogondim/bullet-train-oh-my-zsh-theme bullet-train
 antigen apply
 
-[[ -s "/root/.gvm/scripts/gvm" ]] && source "/root/.gvm/scripts/gvm"
-
-eval "$(starship init zsh)"
+# Env vars and aliases shared by shells
+source $HOME/.env
+source $HOME/.aliases

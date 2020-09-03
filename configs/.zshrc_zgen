@@ -1,0 +1,44 @@
+# cache fasd init code
+fasd_cache="$HOME/.fasd-init-zsh"
+if [ "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
+    fasd --init posix-alias zsh-hook zsh-ccomp zsh-ccomp-install >| "$fasd_cache"
+fi
+source "$fasd_cache"
+unset fasd_cache
+
+# load zgen
+source "${HOME}/.zgen/zgen.zsh"
+
+# if the init script doesn't exist
+if ! zgen saved; then
+
+  # specify plugins here
+  zgen oh-my-zsh
+
+  # plugins
+  zgen oh-my-zsh plugins/fasd
+  zgen oh-my-zsh plugins/colored-man-pages
+  zgen oh-my-zsh plugins/command-not-found
+  zgen oh-my-zsh plugins/magic-enter
+  zgen oh-my-zsh plugins/extract
+
+  zgen load zsh-users/zsh-syntax-highlighting
+
+  # bulk load
+  zgen loadall <<EOPLUGINS
+    zsh-users/zsh-autosuggestions
+    zsh-users/zsh-history-substring-search
+    zsh-users/zsh-completions src
+EOPLUGINS
+  # ^ can't indent this EOPLUGINS
+
+  # theme
+  zgen load caiogondim/bullet-train-oh-my-zsh-theme bullet-train
+ 
+  # generate the init script from plugins above
+  zgen save
+fi
+
+# Env vars and aliases shared by shells
+source $HOME/.env
+source $HOME/.aliases
