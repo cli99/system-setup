@@ -5,9 +5,13 @@
 - color presets - [tomorrow night eighties](https://github.com/chriskempson/tomorrow-theme/tree/master/iTerm2)
 - use powerline font for both font and non-ascii font - meslo lg m bold
 
-- [fasd](https://github.com/clvv/fasd)
+### [fasd](https://github.com/clvv/fasd)
 
-### the_silver_searcher
+### [the silver searcher](https://github.com/ggreer/the_silver_searcher)
+
+```
+  sudo apt-get install silversearcher-ag
+```
 
 ### zgen or antigen
 

@@ -20,8 +20,6 @@ curl -L git.io/antigen > ~/.config/antigen.zsh
 # programs by Homebrew will be used instead of system-provided ones
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-source $HOME/.poetry/env
-
 export PATH="/home/cli/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

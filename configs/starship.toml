@@ -1,0 +1,11 @@
+# Disable the newline at the start of the prompt
+add_newline = false
+
+[directory]
+truncation_length = 5
+
+[python]
+pyenv_version_name = true       # Use pyenv to get Python version.
+
+[character]
+use_symbol_for_status = true    # Show "✖" when the command failed
