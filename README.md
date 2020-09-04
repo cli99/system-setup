@@ -1,10 +1,30 @@
-## [sys-setup](https://cli99.github.io/syssetup/)
+## [system-setup](https://cli99.github.io/system-setup/)
 
-### Example .env
+### install zsh and antigen
+
+```
+sudo apt update
+sudo apt upgrade
+sudo apt-get install -y zsh
+
+if [ ! -d ~/.config ]; then
+  mkdir -p ~/.config;
+fi
+
+curl -L git.io/antigen > ~/.config/antigen.zsh
+```
+
+### .env
 
 ```
 # programs by Homebrew will be used instead of system-provided ones
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+source $HOME/.poetry/env
+
+export PATH="/home/cli/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # go
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
@@ -28,7 +48,7 @@ export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export PYTHONPATH=$GOPATH/src/github.com/tensorflow/models
 
 # git
-export GIT_AUTHOR_NAME="Cheng Li"
+export GIT_AUTHOR_NAME="XXX"
 export GIT_AUTHOR_EMAIL="cli99@illinois.edu"
 export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
 export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
@@ -47,7 +67,7 @@ export PATH=$HOME/bin:$PATH
 export PATH="/usr/local/opt/jpeg-turbo/bin:$PATH"
 ```
 
-### Example .aliases
+### .aliases
 
 ```
 # Stopwatch
