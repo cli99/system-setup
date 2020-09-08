@@ -22,3 +22,4 @@ fi
 source "$fasd_cache"
 unset fasd_cache
 
+bind 'set completion-ignore-case on'
