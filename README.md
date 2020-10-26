@@ -1,6 +1,6 @@
 ## [system-setup](https://cli99.github.io/system-setup/)
 
-### install zsh and antigen
+### Install zsh and antigen
 
 ```
 sudo apt update
