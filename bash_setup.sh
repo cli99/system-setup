@@ -28,18 +28,17 @@ cd ~/.local
 git clone https://github.com/so-fancy/diff-so-fancy.git
 
 # install starship
-curl -fsSL https://starship.rs/install.sh | bash -b ~/.local/bin
-cp ~/.config/starship.toml ~/sys-setup/configs 
+curl -fsSL https://starship.rs/install.sh | bash -s -- -b=~/.local/bin
 
-# install poetry
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+# install pyenv
+curl https://pyenv.run | bash
 
 # copy configs
 cd /tmp
-git clone https://github.com/cli99/sys-setup.git
-cd sys-setup
-cp configs/.bashrc ~
-cp /configs/.bash_profile ~
+git clone https://github.com/cli99/system-setup.git
+cd system-setup
+cp configs/.bash_aliases ~
+cp configs/.bash_profile ~
 cp configs/.aliases ~
 cp configs/.env ~
 cp configs/.gitconfig ~
