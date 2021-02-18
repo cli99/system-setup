@@ -15,11 +15,11 @@ sudo apt-get install fasd
 # set git pull default
 git config pull.ff only
 
-if [ -f ~/.local ]; then
+if [ ! -d ~/.local ]; then
     mkdir -p ~/.local/bin
 fi
 
-if [ -f ~/.config ]; then
+if [ ! -d ~/.config ]; then
     mkdir ~/.config
 fi
 
