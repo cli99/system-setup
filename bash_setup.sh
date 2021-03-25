@@ -8,9 +8,10 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # install fasd
-sudo add-apt-repository ppa:aacebedo/fasd
-sudo apt-get update
-sudo apt-get install fasd
+cd /tmp
+git clone git@github.com:clvv/fasd.git
+cd fasd
+PREFIX=$HOME/.local/ make install
 
 # set git pull default
 git config pull.ff only
@@ -32,6 +33,11 @@ curl -fsSL https://starship.rs/install.sh | bash -s -- -b=~/.local/bin
 
 # install pyenv
 curl https://pyenv.run | bash
+
+
+# git branch autocompletion
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
+
 
 # copy configs
 cd /tmp
